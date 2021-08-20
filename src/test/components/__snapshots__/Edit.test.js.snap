@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should Edit render 1`] = `
+<div>
+  <p>
+    Editing l'oggetto: 
+    1
+  </p>
+  <ExpenseForm
+    expense={
+      Object {
+        "amount": 10,
+        "createdAt": 0,
+        "description": "merda",
+        "id": "1",
+        "note": "merdamerda",
+      }
+    }
+    onSubmit={[Function]}
+  />
+</div>
+`;

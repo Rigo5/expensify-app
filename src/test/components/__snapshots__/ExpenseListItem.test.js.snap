@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shoul list item render with one expense 1`] = `
+<div>
+  <Link
+    to="/edit/1"
+  >
+    merda
+  </Link>
+  <p>
+    10
+     - 
+    0
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Remove
+  </button>
+</div>
+`;

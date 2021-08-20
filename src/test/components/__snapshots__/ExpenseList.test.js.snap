@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test should render expense list with empty message 1`] = `
+<div>
+  <p>
+    No expenses
+  </p>
+</div>
+`;
+
+exports[`testo la lista di item verso snapshot 1`] = `
+<div>
+  <Connect(ExpensesListItem)
+    amount={10}
+    createdAt={0}
+    description="merda"
+    id="1"
+    key="1"
+    note="merdamerda"
+  />
+  <Connect(ExpensesListItem)
+    amount={15}
+    createdAt={-345600000}
+    description="merda2"
+    id="2"
+    key="2"
+    note="merdamerda2"
+  />
+  <Connect(ExpensesListItem)
+    amount={300}
+    createdAt={345600000}
+    description="merda3"
+    id="3"
+    key="3"
+    note="merdamerda3"
+  />
+</div>
+`;

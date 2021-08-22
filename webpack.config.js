@@ -13,7 +13,7 @@ module.exports = (env) => {
     return {
         entry: "./src/app.js",
         output: {
-            path: path.join(__dirname, 'public'),
+            path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
         module: {
@@ -49,7 +49,8 @@ module.exports = (env) => {
         devServer: {
             contentBase: path.join(__dirname, 'public'),
             //questo gli dice che stiamo gestendo le routes attraverso il client e ricadano sul file index
-            historyApiFallback : true
+            historyApiFallback : true,
+            publicPath : '/dist/'
         }
     };
 }

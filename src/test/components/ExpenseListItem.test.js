@@ -20,5 +20,5 @@ test('should remove handler', () => {
 
     wrapper.find('button').simulate('click');
 
-    expect(onClick).lastCalledWith({ id : expenses[0].id});
+    expect(onClick).lastCalledWith(expenses[0].id);
 })

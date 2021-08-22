@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shoul the Expense obj render 1`] = `
+<div>
+  <h1>
+    No expenses
+  </h1>
+  <h1>
+    Total : 
+    $0.00
+  </h1>
+</div>
+`;

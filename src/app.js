@@ -6,12 +6,12 @@ import { setTextFilter } from './actions/filters';
 import { addExpense } from './actions/expenses';
 import { Provider } from 'react-redux';
 import moment from 'moment';
-
-
 import './styles/styles.scss';
 //portare stile browser tutti ad uno stesso punto di partenza
 import 'normalize.css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css';
+import './firebase/firebase';
+
 
 const store = configureStore();
 

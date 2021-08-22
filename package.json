@@ -11,8 +11,7 @@
     "dev-serve": "webpack-dev-server",
     "test": "jest --config=jest.config.json",
     "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build:prod",
-    
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",

@@ -8,13 +8,14 @@ export const ExpensesListItem = (props) => (
         <Link to={'/edit/' + props.id}>{props.description}</Link>
         <p>{props.amount} - {props.createdAt}</p>
         <button onClick={(e) => {
-            props.onClick({ id: props.id });
+
+            props.onClick(props.id );
         }}>Remove</button>
     </div>
 )
 
 const mapDispatchToProps = (dispatch) => ({
-    onClick : (id) => removeExpense({ id : id})
+    onClick : (id) => dispatch(removeExpense({ id : id}))
 });
 
 

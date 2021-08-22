@@ -52,7 +52,7 @@ export class ExpenseListFilter extends React.Component {
     }
 }
 
-const mapDispatchToProps = () => ({
+const mapDispatchToProps = (dispatch) => ({
     onInputChange : (value) => dispatch(setTextFilter(value)),
     byDate : () => dispatch(sortByDate()),
     byAmount : () => dispatch(sortByAmount()),

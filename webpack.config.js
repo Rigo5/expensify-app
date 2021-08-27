@@ -2,9 +2,9 @@
 //dove mettiamo il bundle file ? 
 
 const path = require('path');
-const webpack = require('webapack');
+const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-//const { webpack } = require('webpack');
+const { webpack } = require('webpack');
 
 //process.env.NODE_ENV questa variabile ci dice se siamo in produzione o development viene settata in automatico da heroku
 //per il test la settiamo noi utilizzando il pacchetto cross-env

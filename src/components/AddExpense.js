@@ -1,7 +1,7 @@
 import React from 'react';
 import ExpenseForm from './ExpenseForm';
 import { connect } from 'react-redux';
-import { addExpense, editExpense } from '../actions/expenses';
+import { addExpense, editExpense, startAddExpense } from '../actions/expenses';
 
 
 /* un problema qua per il testing è dato da : 
@@ -31,7 +31,7 @@ export const AddExpense = (props) => {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-    onSubmit : (expense) => dispatch(addExpense(expense))
+    onSubmit : (expense) => dispatch(startAddExpense(expense))
 })
 
 export default connect(undefined, mapDispatchToProps)(AddExpense);

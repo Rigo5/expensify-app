@@ -73,3 +73,13 @@ test('should edit expenses reducers object', () => {
         [testData[0], updates]
     )
 })
+
+test('should set expenses', () => {
+    const action = {
+        type : 'SET_EXPENSES',
+        expenses: [testData[0]]
+    }
+    const result = expensesReducer([], action);
+    
+    expect(result).toEqual([testData[0]]);
+})

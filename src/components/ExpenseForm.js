@@ -8,7 +8,6 @@ class ExpenseForm extends React.Component {
     
     constructor(props){
         super(props); 
-        console.log(props);
         this.state = {
             description: props.expense ? props.expense.description : '',
             note: props.expense ? props.expense.note : "Notes which are optional",

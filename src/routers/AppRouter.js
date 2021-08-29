@@ -6,6 +6,7 @@ import Edit from '../components/Edit';
 import Header from '../components/Header';
 import NotFound from '../components/NotFound';
 import Help from '../components/Help';
+import ExpenseLogin from '../components/ExpenseLogin';
 
 const AppRouter = () => {
     return (
@@ -16,7 +17,8 @@ const AppRouter = () => {
                     <Route path="/help" component={Help} />
                     <Route path="/edit/:id" component={Edit} />
                     <Route path="/create" component={AddExpense} />
-                    <Route path="/" component={ExpenseDashboard} exact={true} />
+                    <Route path="/dashboard" conponent={ExpenseDashboard} />
+                    <Route path="/" component={ExpenseLogin} exact={true} />
                     <Route component={NotFound} />
                 </Switch>
             </div>

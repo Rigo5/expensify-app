@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { connect } from 'react-redux';
+import { startLogin } from '../actions/auth';
 
 class ExpenseLogin extends React.Component {
     constructor(props) {
@@ -28,7 +29,9 @@ class ExpenseLogin extends React.Component {
 
     onSubmit = (e) => {
         e.preventDefault(); 
+        this.props.startLogin();
     }
+
     render() {
         return (<div>
             <p>Logga per accedere all'applicazione</p>
@@ -52,4 +55,8 @@ class ExpenseLogin extends React.Component {
     }
 }
 
-export { ExpenseLogin as default };
+const mapDispatchToProps = (dispatch) => ({
+    startLogin : () => dispatch(startLogin())
+})
+
+export default connect(undefined, mapDispatchToProps)(ExpenseLogin);

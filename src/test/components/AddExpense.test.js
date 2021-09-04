@@ -21,6 +21,7 @@ test('should render add expense correctly', () => {
 })
 
 test('should handle the event onSubmit', () => {
+    
     wrapper.find('ExpenseForm').prop('onSubmit')(expenses[0]);
 
     expect(onSubmit).lastCalledWith(expenses[0]);

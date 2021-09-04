@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should the ExpenseLogin render 1`] = `
+<div>
+  <p>
+    Logga per accedere all'applicazione
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Username"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Password"
+      type="password"
+      value=""
+    />
+    <button>
+      Login
+    </button>
+  </form>
+</div>
+`;

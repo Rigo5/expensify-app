@@ -1,6 +1,8 @@
-import firebase from 'firebase/app'; 
+import firebase from 'firebase/app'
 import 'firebase/database';
+import 'firebase/auth';
 import { expenses } from '../fixtures/expenses';
+
 
 const firebaseConfig = {
     apiKey: process.env.FIREBASE_API_KEY,
@@ -13,11 +15,13 @@ const firebaseConfig = {
     measurementId: process.env.FIREBASE_MESASUREMENT_ID
   };
 
+
 firebase.initializeApp(firebaseConfig);
 
 const database = firebase.database();
+const googleProvider = new firebase.auth.GoogleAuthProvider();
 
-export {firebase, database as default} ; 
+export {firebase, googleProvider, database as default} ; 
 
 //ref significa reference e serve per indicare le varie "tabelle" su cui andiamo a lavorare
 //in questi database non relazionali avremo non tabelle ma collection di entità
